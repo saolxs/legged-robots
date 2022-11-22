@@ -1,0 +1,82 @@
+{
+    "os": "Linux-5.14.0-1054-oem-x86_64-with-glibc2.10",
+    "python": "3.8.0",
+    "heartbeatAt": "2022-11-22T00:33:03.870320",
+    "startedAt": "2022-11-22T00:33:03.147011",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--capture-video",
+        "--track"
+    ],
+    "state": "running",
+    "program": "ant_ppo.py",
+    "codePath": "ant_ppo.py",
+    "host": "ready-for-rename",
+    "username": "vmuser",
+    "executable": "/home/vmuser/.conda/envs/rl/bin/python3",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 3816.541625,
+        "min": 800.0,
+        "max": 4200.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 4033.939,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3600.0,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 4033.722,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 4033.374,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 3600.0,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 4000.002,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 4010.194,
+            "min": 800.0,
+            "max": 4200.0
+        },
+        {
+            "current": 4073.351,
+            "min": 800.0,
+            "max": 4200.0
+        }
+    ],
+    "disk": {
+        "total": 915.3223114013672,
+        "used": 283.37868881225586
+    },
+    "gpu": "NVIDIA GeForce GTX 1060 6GB",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1060 6GB",
+            "memory_total": 6373572608
+        }
+    ],
+    "memory": {
+        "total": 15.490524291992188
+    }
+}

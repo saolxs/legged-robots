@@ -1,0 +1,198 @@
+2022-11-22 00:01:46,012 INFO    StreamThr :17961 [internal.py:wandb_internal():88] W&B internal server running at pid: 17961, started at: 2022-11-22 00:01:46.011491
+2022-11-22 00:01:46,014 DEBUG   HandlerThread:17961 [handler.py:handle_request():139] handle_request: status
+2022-11-22 00:01:46,014 DEBUG   SenderThread:17961 [sender.py:send_request():317] send_request: status
+2022-11-22 00:01:46,016 DEBUG   SenderThread:17961 [sender.py:send():303] send: header
+2022-11-22 00:01:46,016 INFO    WriterThread:17961 [datastore.py:open_for_write():75] open: /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/run-1edtnh60.wandb
+2022-11-22 00:01:46,017 DEBUG   SenderThread:17961 [sender.py:send():303] send: run
+2022-11-22 00:01:46,610 DEBUG   HandlerThread:17961 [handler.py:handle_request():139] handle_request: check_version
+2022-11-22 00:01:46,623 INFO    SenderThread:17961 [dir_watcher.py:__init__():216] watching files in: /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/files
+2022-11-22 00:01:46,623 INFO    SenderThread:17961 [sender.py:_start_run_threads():928] run started: 1edtnh60 with start time 1669075306.008617
+2022-11-22 00:01:46,623 DEBUG   SenderThread:17961 [sender.py:send():303] send: summary
+2022-11-22 00:01:46,623 INFO    SenderThread:17961 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-22 00:01:46,623 DEBUG   SenderThread:17961 [sender.py:send_request():317] send_request: check_version
+2022-11-22 00:01:46,657 DEBUG   HandlerThread:17961 [handler.py:handle_request():139] handle_request: run_start
+2022-11-22 00:01:46,660 DEBUG   HandlerThread:17961 [system_info.py:__init__():31] System info init
+2022-11-22 00:01:46,660 DEBUG   HandlerThread:17961 [system_info.py:__init__():46] System info init done
+2022-11-22 00:01:46,660 INFO    HandlerThread:17961 [system_monitor.py:start():150] Starting system monitor
+2022-11-22 00:01:46,660 INFO    SystemMonitor:17961 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2022-11-22 00:01:46,660 INFO    HandlerThread:17961 [system_monitor.py:probe():168] Collecting system info
+2022-11-22 00:01:46,661 INFO    SystemMonitor:17961 [interfaces.py:start():168] Started cpu
+2022-11-22 00:01:46,662 INFO    SystemMonitor:17961 [interfaces.py:start():168] Started disk
+2022-11-22 00:01:46,662 INFO    SystemMonitor:17961 [interfaces.py:start():168] Started gpu
+2022-11-22 00:01:46,662 INFO    SystemMonitor:17961 [interfaces.py:start():168] Started memory
+2022-11-22 00:01:46,663 INFO    SystemMonitor:17961 [interfaces.py:start():168] Started network
+2022-11-22 00:01:46,684 DEBUG   HandlerThread:17961 [system_info.py:probe():195] Probing system
+2022-11-22 00:01:46,689 DEBUG   HandlerThread:17961 [git.py:repo():40] git repository is invalid
+2022-11-22 00:01:46,689 DEBUG   HandlerThread:17961 [system_info.py:probe():241] Probing system done
+2022-11-22 00:01:46,689 DEBUG   HandlerThread:17961 [system_monitor.py:probe():177] {'os': 'Linux-5.14.0-1054-oem-x86_64-with-glibc2.10', 'python': '3.8.0', 'heartbeatAt': '2022-11-22T00:01:46.684604', 'startedAt': '2022-11-22T00:01:46.000886', 'docker': None, 'cuda': None, 'args': ('--capture-video', '--track'), 'state': 'running', 'program': 'ant_ppo.py', 'codePath': 'ant_ppo.py', 'host': 'ready-for-rename', 'username': 'vmuser', 'executable': '/home/vmuser/.conda/envs/rl/bin/python3', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 3910.148875, 'min': 800.0, 'max': 4200.0}, 'cpu_freq_per_core': [{'current': 4020.232, 'min': 800.0, 'max': 4200.0}, {'current': 4000.001, 'min': 800.0, 'max': 4200.0}, {'current': 4000.961, 'min': 800.0, 'max': 4200.0}, {'current': 4000.845, 'min': 800.0, 'max': 4200.0}, {'current': 4020.103, 'min': 800.0, 'max': 4200.0}, {'current': 3600.0, 'min': 800.0, 'max': 4200.0}, {'current': 4020.031, 'min': 800.0, 'max': 4200.0}, {'current': 4019.979, 'min': 800.0, 'max': 4200.0}], 'disk': {'total': 915.3223114013672, 'used': 283.2419662475586}, 'gpu': 'NVIDIA GeForce GTX 1060 6GB', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX 1060 6GB', 'memory_total': 6373572608}], 'memory': {'total': 15.490524291992188}}
+2022-11-22 00:01:46,689 INFO    HandlerThread:17961 [system_monitor.py:probe():178] Finished collecting system info
+2022-11-22 00:01:46,689 INFO    HandlerThread:17961 [system_monitor.py:probe():181] Publishing system info
+2022-11-22 00:01:46,690 DEBUG   HandlerThread:17961 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2022-11-22 00:01:46,690 DEBUG   HandlerThread:17961 [system_info.py:_save_pip():67] Saving pip packages done
+2022-11-22 00:01:46,690 DEBUG   HandlerThread:17961 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2022-11-22 00:01:47,624 INFO    Thread-13 :17961 [dir_watcher.py:_on_file_created():275] file/dir created: /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/files/requirements.txt
+2022-11-22 00:01:47,624 INFO    Thread-13 :17961 [dir_watcher.py:_on_file_created():275] file/dir created: /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/files/conda-environment.yaml
+2022-11-22 00:01:47,625 INFO    Thread-13 :17961 [dir_watcher.py:_on_file_created():275] file/dir created: /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/files/wandb-summary.json
+2022-11-22 00:01:50,626 INFO    Thread-13 :17961 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/files/conda-environment.yaml
+2022-11-22 00:01:50,644 DEBUG   HandlerThread:17961 [system_info.py:_save_conda():86] Saving conda packages done
+2022-11-22 00:01:50,644 DEBUG   HandlerThread:17961 [system_info.py:_save_code():89] Saving code
+2022-11-22 00:01:50,644 DEBUG   HandlerThread:17961 [system_info.py:_save_code():110] Saving code done
+2022-11-22 00:01:50,645 INFO    HandlerThread:17961 [system_monitor.py:probe():183] Finished publishing system info
+2022-11-22 00:01:50,671 DEBUG   SenderThread:17961 [sender.py:send():303] send: files
+2022-11-22 00:01:50,671 INFO    SenderThread:17961 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2022-11-22 00:01:50,672 INFO    SenderThread:17961 [sender.py:_save_file():1171] saving file code/ant_ppo.py with policy now
+2022-11-22 00:01:50,676 DEBUG   HandlerThread:17961 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-22 00:01:50,677 DEBUG   SenderThread:17961 [sender.py:send_request():317] send_request: stop_status
+2022-11-22 00:01:50,679 INFO    HandlerThread:17961 [handler.py:handle_tbrecord():724] handling tbrecord: tbrecord {
+  log_dir: "runs/Ant-v3__ant_ppo__42__1669075256"
+  save: true
+}
+control {
+  relay_id: "26a8f0f2fcdd42e5affcfaa57d847f6d"
+}
+_info {
+  stream_id: "1edtnh60"
+}
+
+2022-11-22 00:01:50,680 DEBUG   HandlerThread:17961 [config_util.py:dict_from_config_file():100] no default config file found in config-defaults.yaml
+2022-11-22 00:01:50,958 DEBUG   SenderThread:17961 [sender.py:send():303] send: telemetry
+2022-11-22 00:01:50,958 DEBUG   SenderThread:17961 [sender.py:send():303] send: tbrecord
+2022-11-22 00:01:50,958 DEBUG   SenderThread:17961 [sender.py:send():303] send: files
+2022-11-22 00:01:50,958 INFO    SenderThread:17961 [sender.py:_save_file():1171] saving file events.out.tfevents.1669075310.ready-for-rename.17932.0 with policy live
+2022-11-22 00:01:50,987 INFO    Thread-18 :17961 [upload_job.py:push():123] Skipped uploading /tmp/tmpw68ggcufwandb/j8nrw685-code/ant_ppo.py
+2022-11-22 00:01:51,626 INFO    Thread-13 :17961 [dir_watcher.py:_on_file_created():275] file/dir created: /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/files/wandb-metadata.json
+2022-11-22 00:01:51,627 INFO    Thread-13 :17961 [dir_watcher.py:_on_file_created():275] file/dir created: /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/files/events.out.tfevents.1669075310.ready-for-rename.17932.0
+2022-11-22 00:01:51,627 INFO    Thread-13 :17961 [dir_watcher.py:_on_file_created():275] file/dir created: /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/files/output.log
+2022-11-22 00:01:51,627 INFO    Thread-13 :17961 [dir_watcher.py:_on_file_created():275] file/dir created: /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/files/code/ant_ppo.py
+2022-11-22 00:01:51,627 INFO    Thread-13 :17961 [dir_watcher.py:_on_file_created():275] file/dir created: /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/files/code
+2022-11-22 00:01:51,786 INFO    Thread-16 :17961 [upload_job.py:push():143] Uploaded file /tmp/tmpw68ggcufwandb/3uxnccd1-wandb-metadata.json
+2022-11-22 00:01:51,904 INFO    Thread-20 :17961 [upload_job.py:push():143] Uploaded file /tmp/tmpw68ggcufwandb/2o6dpsje-events.out.tfevents.1669075310.ready-for-rename.17932.0
+2022-11-22 00:01:53,627 INFO    Thread-13 :17961 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/files/output.log
+2022-11-22 00:01:53,673 DEBUG   SenderThread:17961 [sender.py:send():303] send: exit
+2022-11-22 00:01:53,674 INFO    SenderThread:17961 [sender.py:send_exit():442] handling exit code: 1
+2022-11-22 00:01:53,674 INFO    SenderThread:17961 [sender.py:send_exit():444] handling runtime: 7
+2022-11-22 00:01:53,674 INFO    SenderThread:17961 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-22 00:01:53,674 INFO    SenderThread:17961 [sender.py:send_exit():450] send defer
+2022-11-22 00:01:53,674 DEBUG   HandlerThread:17961 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 00:01:53,674 INFO    HandlerThread:17961 [handler.py:handle_request_defer():162] handle defer: 0
+2022-11-22 00:01:53,675 DEBUG   SenderThread:17961 [sender.py:send_request():317] send_request: defer
+2022-11-22 00:01:53,675 INFO    SenderThread:17961 [sender.py:send_request_defer():459] handle sender defer: 0
+2022-11-22 00:01:53,675 INFO    SenderThread:17961 [sender.py:transition_state():463] send defer: 1
+2022-11-22 00:01:53,676 DEBUG   HandlerThread:17961 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 00:01:53,676 INFO    HandlerThread:17961 [handler.py:handle_request_defer():162] handle defer: 1
+2022-11-22 00:01:53,676 INFO    HandlerThread:17961 [system_monitor.py:finish():160] Stopping system monitor
+2022-11-22 00:01:53,680 DEBUG   SystemMonitor:17961 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2022-11-22 00:01:53,680 DEBUG   SystemMonitor:17961 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2022-11-22 00:01:53,681 DEBUG   SystemMonitor:17961 [system_monitor.py:_start():141] Publishing last batch of metrics
+2022-11-22 00:01:53,681 INFO    HandlerThread:17961 [interfaces.py:finish():173] Joined cpu
+2022-11-22 00:01:53,682 INFO    HandlerThread:17961 [interfaces.py:finish():173] Joined disk
+2022-11-22 00:01:53,706 INFO    HandlerThread:17961 [interfaces.py:finish():173] Joined gpu
+2022-11-22 00:01:53,706 INFO    HandlerThread:17961 [interfaces.py:finish():173] Joined memory
+2022-11-22 00:01:53,706 INFO    HandlerThread:17961 [interfaces.py:finish():173] Joined network
+2022-11-22 00:01:53,706 DEBUG   SenderThread:17961 [sender.py:send_request():317] send_request: defer
+2022-11-22 00:01:53,706 INFO    SenderThread:17961 [sender.py:send_request_defer():459] handle sender defer: 1
+2022-11-22 00:01:53,706 INFO    SenderThread:17961 [sender.py:transition_state():463] send defer: 2
+2022-11-22 00:01:53,707 DEBUG   SenderThread:17961 [sender.py:send():303] send: stats
+2022-11-22 00:01:53,707 DEBUG   HandlerThread:17961 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 00:01:53,707 INFO    HandlerThread:17961 [handler.py:handle_request_defer():162] handle defer: 2
+2022-11-22 00:01:53,707 DEBUG   SenderThread:17961 [sender.py:send_request():317] send_request: defer
+2022-11-22 00:01:53,707 INFO    SenderThread:17961 [sender.py:send_request_defer():459] handle sender defer: 2
+2022-11-22 00:01:53,707 INFO    SenderThread:17961 [sender.py:transition_state():463] send defer: 3
+2022-11-22 00:01:53,707 DEBUG   HandlerThread:17961 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 00:01:53,707 INFO    HandlerThread:17961 [handler.py:handle_request_defer():162] handle defer: 3
+2022-11-22 00:01:54,628 INFO    Thread-13 :17961 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/files/wandb-summary.json
+2022-11-22 00:01:56,630 INFO    Thread-13 :17961 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/files/output.log
+2022-11-22 00:01:59,851 DEBUG   SenderThread:17961 [sender.py:send_request():317] send_request: defer
+2022-11-22 00:01:59,851 DEBUG   HandlerThread:17961 [handler.py:handle_request():139] handle_request: poll_exit
+2022-11-22 00:01:59,851 INFO    SenderThread:17961 [sender.py:send_request_defer():459] handle sender defer: 3
+2022-11-22 00:01:59,852 DEBUG   HandlerThread:17961 [handler.py:handle_request():139] handle_request: keepalive
+2022-11-22 00:01:59,852 INFO    SenderThread:17961 [sender.py:transition_state():463] send defer: 4
+2022-11-22 00:01:59,856 DEBUG   SenderThread:17961 [sender.py:send_request():317] send_request: poll_exit
+2022-11-22 00:01:59,856 DEBUG   SenderThread:17961 [sender.py:send():303] send: history
+2022-11-22 00:01:59,857 DEBUG   SenderThread:17961 [sender.py:send():303] send: summary
+2022-11-22 00:01:59,858 DEBUG   HandlerThread:17961 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 00:01:59,866 INFO    HandlerThread:17961 [handler.py:handle_request_defer():162] handle defer: 4
+2022-11-22 00:01:59,866 INFO    SenderThread:17961 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-22 00:01:59,867 DEBUG   SenderThread:17961 [sender.py:send():303] send: summary
+2022-11-22 00:01:59,868 INFO    SenderThread:17961 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-22 00:01:59,869 DEBUG   SenderThread:17961 [sender.py:send_request():317] send_request: defer
+2022-11-22 00:01:59,870 INFO    SenderThread:17961 [sender.py:send_request_defer():459] handle sender defer: 4
+2022-11-22 00:01:59,870 INFO    SenderThread:17961 [sender.py:transition_state():463] send defer: 5
+2022-11-22 00:01:59,871 DEBUG   HandlerThread:17961 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 00:01:59,871 INFO    HandlerThread:17961 [handler.py:handle_request_defer():162] handle defer: 5
+2022-11-22 00:01:59,872 DEBUG   SenderThread:17961 [sender.py:send_request():317] send_request: defer
+2022-11-22 00:01:59,872 INFO    SenderThread:17961 [sender.py:send_request_defer():459] handle sender defer: 5
+2022-11-22 00:02:00,243 INFO    SenderThread:17961 [sender.py:transition_state():463] send defer: 6
+2022-11-22 00:02:00,245 DEBUG   HandlerThread:17961 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 00:02:00,245 INFO    HandlerThread:17961 [handler.py:handle_request_defer():162] handle defer: 6
+2022-11-22 00:02:00,245 DEBUG   SenderThread:17961 [sender.py:send_request():317] send_request: defer
+2022-11-22 00:02:00,246 INFO    SenderThread:17961 [sender.py:send_request_defer():459] handle sender defer: 6
+2022-11-22 00:02:00,633 INFO    Thread-13 :17961 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/files/config.yaml
+2022-11-22 00:02:00,633 INFO    Thread-13 :17961 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/files/wandb-summary.json
+2022-11-22 00:02:01,704 INFO    SenderThread:17961 [sender.py:transition_state():463] send defer: 7
+2022-11-22 00:02:01,706 DEBUG   HandlerThread:17961 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 00:02:01,706 INFO    HandlerThread:17961 [handler.py:handle_request_defer():162] handle defer: 7
+2022-11-22 00:02:01,706 DEBUG   SenderThread:17961 [sender.py:send_request():317] send_request: defer
+2022-11-22 00:02:01,707 INFO    SenderThread:17961 [sender.py:send_request_defer():459] handle sender defer: 7
+2022-11-22 00:02:01,707 INFO    SenderThread:17961 [dir_watcher.py:finish():362] shutting down directory watcher
+2022-11-22 00:02:02,634 INFO    Thread-13 :17961 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/files/output.log
+2022-11-22 00:02:02,636 INFO    SenderThread:17961 [dir_watcher.py:finish():392] scan: /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/files
+2022-11-22 00:02:02,636 INFO    SenderThread:17961 [dir_watcher.py:finish():406] scan save: /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/files/config.yaml config.yaml
+2022-11-22 00:02:02,637 INFO    SenderThread:17961 [dir_watcher.py:finish():406] scan save: /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/files/requirements.txt requirements.txt
+2022-11-22 00:02:02,643 INFO    SenderThread:17961 [dir_watcher.py:finish():406] scan save: /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/files/wandb-metadata.json wandb-metadata.json
+2022-11-22 00:02:02,643 INFO    SenderThread:17961 [dir_watcher.py:finish():406] scan save: /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/files/events.out.tfevents.1669075310.ready-for-rename.17932.0 events.out.tfevents.1669075310.ready-for-rename.17932.0
+2022-11-22 00:02:02,645 INFO    SenderThread:17961 [dir_watcher.py:finish():406] scan save: /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/files/conda-environment.yaml conda-environment.yaml
+2022-11-22 00:02:02,646 INFO    SenderThread:17961 [dir_watcher.py:finish():406] scan save: /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/files/output.log output.log
+2022-11-22 00:02:02,646 INFO    SenderThread:17961 [dir_watcher.py:finish():406] scan save: /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/files/wandb-summary.json wandb-summary.json
+2022-11-22 00:02:02,653 INFO    SenderThread:17961 [dir_watcher.py:finish():406] scan save: /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/files/code/ant_ppo.py code/ant_ppo.py
+2022-11-22 00:02:02,653 INFO    SenderThread:17961 [sender.py:transition_state():463] send defer: 8
+2022-11-22 00:02:02,654 DEBUG   HandlerThread:17961 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 00:02:02,654 INFO    HandlerThread:17961 [handler.py:handle_request_defer():162] handle defer: 8
+2022-11-22 00:02:02,654 DEBUG   SenderThread:17961 [sender.py:send_request():317] send_request: defer
+2022-11-22 00:02:02,654 INFO    SenderThread:17961 [sender.py:send_request_defer():459] handle sender defer: 8
+2022-11-22 00:02:02,654 INFO    SenderThread:17961 [file_pusher.py:finish():168] shutting down file pusher
+2022-11-22 00:02:04,462 INFO    Thread-23 :17961 [upload_job.py:push():143] Uploaded file /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/files/conda-environment.yaml
+2022-11-22 00:02:04,472 INFO    Thread-21 :17961 [upload_job.py:push():143] Uploaded file /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/files/config.yaml
+2022-11-22 00:02:04,714 DEBUG   HandlerThread:17961 [handler.py:handle_request():139] handle_request: keepalive
+2022-11-22 00:02:04,767 INFO    Thread-25 :17961 [upload_job.py:push():143] Uploaded file /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/files/wandb-summary.json
+2022-11-22 00:02:04,927 INFO    Thread-24 :17961 [upload_job.py:push():143] Uploaded file /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/files/output.log
+2022-11-22 00:02:05,239 INFO    Thread-22 :17961 [upload_job.py:push():143] Uploaded file /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/files/requirements.txt
+2022-11-22 00:02:05,441 INFO    Thread-12 :17961 [sender.py:transition_state():463] send defer: 9
+2022-11-22 00:02:05,442 DEBUG   HandlerThread:17961 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 00:02:05,442 INFO    HandlerThread:17961 [handler.py:handle_request_defer():162] handle defer: 9
+2022-11-22 00:02:05,443 DEBUG   SenderThread:17961 [sender.py:send_request():317] send_request: defer
+2022-11-22 00:02:05,443 INFO    SenderThread:17961 [sender.py:send_request_defer():459] handle sender defer: 9
+2022-11-22 00:02:05,443 INFO    SenderThread:17961 [file_pusher.py:join():173] waiting for file pusher
+2022-11-22 00:02:05,444 INFO    SenderThread:17961 [sender.py:transition_state():463] send defer: 10
+2022-11-22 00:02:05,444 DEBUG   HandlerThread:17961 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 00:02:05,445 INFO    HandlerThread:17961 [handler.py:handle_request_defer():162] handle defer: 10
+2022-11-22 00:02:05,445 DEBUG   SenderThread:17961 [sender.py:send_request():317] send_request: defer
+2022-11-22 00:02:05,446 INFO    SenderThread:17961 [sender.py:send_request_defer():459] handle sender defer: 10
+2022-11-22 00:02:05,775 INFO    SenderThread:17961 [sender.py:transition_state():463] send defer: 11
+2022-11-22 00:02:05,775 DEBUG   HandlerThread:17961 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 00:02:05,775 INFO    HandlerThread:17961 [handler.py:handle_request_defer():162] handle defer: 11
+2022-11-22 00:02:05,775 DEBUG   SenderThread:17961 [sender.py:send_request():317] send_request: defer
+2022-11-22 00:02:05,775 INFO    SenderThread:17961 [sender.py:send_request_defer():459] handle sender defer: 11
+2022-11-22 00:02:05,776 INFO    SenderThread:17961 [sender.py:transition_state():463] send defer: 12
+2022-11-22 00:02:05,776 DEBUG   SenderThread:17961 [sender.py:send():303] send: final
+2022-11-22 00:02:05,776 DEBUG   SenderThread:17961 [sender.py:send():303] send: footer
+2022-11-22 00:02:05,776 DEBUG   HandlerThread:17961 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 00:02:05,776 INFO    HandlerThread:17961 [handler.py:handle_request_defer():162] handle defer: 12
+2022-11-22 00:02:05,776 DEBUG   SenderThread:17961 [sender.py:send_request():317] send_request: defer
+2022-11-22 00:02:05,776 INFO    SenderThread:17961 [sender.py:send_request_defer():459] handle sender defer: 12
+2022-11-22 00:02:05,777 DEBUG   HandlerThread:17961 [handler.py:handle_request():139] handle_request: poll_exit
+2022-11-22 00:02:05,777 DEBUG   SenderThread:17961 [sender.py:send_request():317] send_request: poll_exit
+2022-11-22 00:02:05,778 DEBUG   HandlerThread:17961 [handler.py:handle_request():139] handle_request: server_info
+2022-11-22 00:02:05,778 DEBUG   SenderThread:17961 [sender.py:send_request():317] send_request: server_info
+2022-11-22 00:02:05,780 DEBUG   HandlerThread:17961 [handler.py:handle_request():139] handle_request: get_summary
+2022-11-22 00:02:05,781 DEBUG   HandlerThread:17961 [handler.py:handle_request():139] handle_request: sampled_history
+2022-11-22 00:02:06,356 INFO    MainThread:17961 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2022-11-22 00:02:06,357 INFO    MainThread:17961 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2022-11-22 00:02:06,357 INFO    MainThread:17961 [wandb_run.py:_footer_sync_info():3333] logging synced files
+2022-11-22 00:02:06,359 DEBUG   HandlerThread:17961 [handler.py:handle_request():139] handle_request: shutdown
+2022-11-22 00:02:06,360 INFO    HandlerThread:17961 [handler.py:finish():814] shutting down handler
+2022-11-22 00:02:06,776 INFO    WriterThread:17961 [datastore.py:close():279] close: /home/vmuser/Documents/cartpole/ant_ppo/wandb/run-20221122_000146-1edtnh60/run-1edtnh60.wandb
+2022-11-22 00:02:07,356 INFO    SenderThread:17961 [sender.py:finish():1331] shutting down sender
+2022-11-22 00:02:07,356 INFO    SenderThread:17961 [file_pusher.py:finish():168] shutting down file pusher
+2022-11-22 00:02:07,356 INFO    SenderThread:17961 [file_pusher.py:join():173] waiting for file pusher
+2022-11-22 00:02:07,365 INFO    MainThread:17961 [internal.py:handle_exit():78] Internal process exited

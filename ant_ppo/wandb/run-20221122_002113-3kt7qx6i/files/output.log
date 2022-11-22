@@ -1,0 +1,20 @@
+
+Box(-inf, inf, (111,), float64)
+Traceback (most recent call last):
+  File "ant_ppo.py", line 333, in <module>
+    nxt_state = torch.Tensor(envs.reset()).to(device)
+  File "/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/gym/vector/vector_env.py", line 80, in reset
+    return self.reset_wait(seed=seed, return_info=return_info, options=options)
+  File "/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/gym/vector/sync_vector_env.py", line 115, in reset_wait
+    observation = env.reset(**kwargs)
+  File "/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/gym/wrappers/record_video.py", line 58, in reset
+    self.start_video_recorder()
+  File "/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/gym/wrappers/record_video.py", line 75, in start_video_recorder
+    self.video_recorder.capture_frame()
+  File "/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/gym/wrappers/monitoring/video_recorder.py", line 145, in capture_frame
+    self._encode_image_frame(frame)
+  File "/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/gym/wrappers/monitoring/video_recorder.py", line 202, in _encode_image_frame
+    self.encoder = ImageEncoder(
+  File "/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/gym/wrappers/monitoring/video_recorder.py", line 319, in __init__
+    raise error.DependencyNotInstalled(
+gym.error.DependencyNotInstalled: Found neither the ffmpeg nor avconv executables. On OS X, you can install ffmpeg via `brew install ffmpeg`. On most Ubuntu variants, `sudo apt-get install ffmpeg` should do it. On Ubuntu 14.04, however, you'll need to install avconv with `sudo apt-get install libav-tools`. Alternatively, please install imageio-ffmpeg with `pip install imageio-ffmpeg`

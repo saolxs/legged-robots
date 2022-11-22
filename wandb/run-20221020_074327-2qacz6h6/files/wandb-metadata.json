@@ -1,0 +1,18 @@
+{
+    "os": "macOS-10.16-x86_64-i386-64bit",
+    "python": "3.8.13",
+    "heartbeatAt": "2022-10-20T05:43:27.921781",
+    "startedAt": "2022-10-20T05:43:27.092724",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "--track"
+    ],
+    "state": "running",
+    "program": "base.py",
+    "codePath": "base.py",
+    "host": "Sams-Mac.local",
+    "username": "olvdejo",
+    "executable": "/Users/olvdejo/opt/anaconda3/envs/research/bin/python3"
+}

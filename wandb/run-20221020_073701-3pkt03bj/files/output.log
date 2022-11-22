@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "base.py", line 110, in <module>
+    writer.add_scaler("test_loss", i*2, global_step=i)
+AttributeError: 'SummaryWriter' object has no attribute 'add_scaler'

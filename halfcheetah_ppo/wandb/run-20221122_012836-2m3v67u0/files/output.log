@@ -1,0 +1,8 @@
+
+Box(-inf, inf, (26,), float32)
+Traceback (most recent call last):
+  File "half_ppo.py", line 329, in <module>
+    agent = Agent(envs).to(device)
+  File "/home/vmuser/Documents/cartpole/halfcheetah_ppo/actor_critic.py", line 43, in __init__
+    init_layer(nn.Linear(64, envs.single_action_space.n), std=0.01),
+AttributeError: 'Box' object has no attribute 'n'

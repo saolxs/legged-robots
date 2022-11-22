@@ -1,0 +1,199 @@
+2022-11-22 01:24:27,724 INFO    StreamThr :45454 [internal.py:wandb_internal():88] W&B internal server running at pid: 45454, started at: 2022-11-22 01:24:27.723541
+2022-11-22 01:24:27,725 DEBUG   HandlerThread:45454 [handler.py:handle_request():139] handle_request: status
+2022-11-22 01:24:27,727 DEBUG   SenderThread:45454 [sender.py:send_request():317] send_request: status
+2022-11-22 01:24:27,728 DEBUG   SenderThread:45454 [sender.py:send():303] send: header
+2022-11-22 01:24:27,728 INFO    WriterThread:45454 [datastore.py:open_for_write():75] open: /home/vmuser/Documents/cartpole/halfcheetah_ppo/wandb/run-20221122_012427-x6bl0lgj/run-x6bl0lgj.wandb
+2022-11-22 01:24:27,728 DEBUG   SenderThread:45454 [sender.py:send():303] send: run
+2022-11-22 01:24:28,344 DEBUG   HandlerThread:45454 [handler.py:handle_request():139] handle_request: check_version
+2022-11-22 01:24:28,364 INFO    SenderThread:45454 [dir_watcher.py:__init__():216] watching files in: /home/vmuser/Documents/cartpole/halfcheetah_ppo/wandb/run-20221122_012427-x6bl0lgj/files
+2022-11-22 01:24:28,365 INFO    SenderThread:45454 [sender.py:_start_run_threads():928] run started: x6bl0lgj with start time 1669080267.711418
+2022-11-22 01:24:28,365 DEBUG   SenderThread:45454 [sender.py:send():303] send: summary
+2022-11-22 01:24:28,365 INFO    SenderThread:45454 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-22 01:24:28,365 DEBUG   SenderThread:45454 [sender.py:send_request():317] send_request: check_version
+2022-11-22 01:24:28,404 DEBUG   HandlerThread:45454 [handler.py:handle_request():139] handle_request: run_start
+2022-11-22 01:24:28,440 DEBUG   HandlerThread:45454 [system_info.py:__init__():31] System info init
+2022-11-22 01:24:28,440 DEBUG   HandlerThread:45454 [system_info.py:__init__():46] System info init done
+2022-11-22 01:24:28,440 INFO    HandlerThread:45454 [system_monitor.py:start():150] Starting system monitor
+2022-11-22 01:24:28,440 INFO    SystemMonitor:45454 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2022-11-22 01:24:28,440 INFO    HandlerThread:45454 [system_monitor.py:probe():168] Collecting system info
+2022-11-22 01:24:28,441 INFO    SystemMonitor:45454 [interfaces.py:start():168] Started cpu
+2022-11-22 01:24:28,443 INFO    SystemMonitor:45454 [interfaces.py:start():168] Started disk
+2022-11-22 01:24:28,443 INFO    SystemMonitor:45454 [interfaces.py:start():168] Started gpu
+2022-11-22 01:24:28,444 INFO    SystemMonitor:45454 [interfaces.py:start():168] Started memory
+2022-11-22 01:24:28,446 INFO    SystemMonitor:45454 [interfaces.py:start():168] Started network
+2022-11-22 01:24:28,467 DEBUG   HandlerThread:45454 [system_info.py:probe():195] Probing system
+2022-11-22 01:24:28,472 DEBUG   HandlerThread:45454 [git.py:repo():40] git repository is invalid
+2022-11-22 01:24:28,472 DEBUG   HandlerThread:45454 [system_info.py:probe():241] Probing system done
+2022-11-22 01:24:28,472 DEBUG   HandlerThread:45454 [system_monitor.py:probe():177] {'os': 'Linux-5.14.0-1054-oem-x86_64-with-glibc2.10', 'python': '3.8.0', 'heartbeatAt': '2022-11-22T01:24:28.467816', 'startedAt': '2022-11-22T01:24:27.689492', 'docker': None, 'cuda': None, 'args': ('--capture-video', '--track'), 'state': 'running', 'program': 'half_ppo.py', 'codePath': 'half_ppo.py', 'host': 'ready-for-rename', 'username': 'vmuser', 'executable': '/home/vmuser/.conda/envs/rl/bin/python3', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 3804.5176249999995, 'min': 800.0, 'max': 4200.0}, 'cpu_freq_per_core': [{'current': 3600.0, 'min': 800.0, 'max': 4200.0}, {'current': 4010.51, 'min': 800.0, 'max': 4200.0}, {'current': 4011.79, 'min': 800.0, 'max': 4200.0}, {'current': 4010.885, 'min': 800.0, 'max': 4200.0}, {'current': 3600.0, 'min': 800.0, 'max': 4200.0}, {'current': 3600.0, 'min': 800.0, 'max': 4200.0}, {'current': 3600.0, 'min': 800.0, 'max': 4200.0}, {'current': 4002.956, 'min': 800.0, 'max': 4200.0}], 'disk': {'total': 915.3223114013672, 'used': 290.7767143249512}, 'gpu': 'NVIDIA GeForce GTX 1060 6GB', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX 1060 6GB', 'memory_total': 6373572608}], 'memory': {'total': 15.490524291992188}}
+2022-11-22 01:24:28,472 INFO    HandlerThread:45454 [system_monitor.py:probe():178] Finished collecting system info
+2022-11-22 01:24:28,472 INFO    HandlerThread:45454 [system_monitor.py:probe():181] Publishing system info
+2022-11-22 01:24:28,472 DEBUG   HandlerThread:45454 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2022-11-22 01:24:28,473 DEBUG   HandlerThread:45454 [system_info.py:_save_pip():67] Saving pip packages done
+2022-11-22 01:24:28,473 DEBUG   HandlerThread:45454 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2022-11-22 01:24:29,367 INFO    Thread-13 :45454 [dir_watcher.py:_on_file_created():275] file/dir created: /home/vmuser/Documents/cartpole/halfcheetah_ppo/wandb/run-20221122_012427-x6bl0lgj/files/conda-environment.yaml
+2022-11-22 01:24:29,367 INFO    Thread-13 :45454 [dir_watcher.py:_on_file_created():275] file/dir created: /home/vmuser/Documents/cartpole/halfcheetah_ppo/wandb/run-20221122_012427-x6bl0lgj/files/wandb-summary.json
+2022-11-22 01:24:29,367 INFO    Thread-13 :45454 [dir_watcher.py:_on_file_created():275] file/dir created: /home/vmuser/Documents/cartpole/halfcheetah_ppo/wandb/run-20221122_012427-x6bl0lgj/files/requirements.txt
+2022-11-22 01:24:45,315 DEBUG   HandlerThread:45454 [system_info.py:_save_conda():86] Saving conda packages done
+2022-11-22 01:24:45,315 DEBUG   HandlerThread:45454 [system_info.py:_save_code():89] Saving code
+2022-11-22 01:24:45,316 DEBUG   HandlerThread:45454 [system_info.py:_save_code():110] Saving code done
+2022-11-22 01:24:45,316 INFO    HandlerThread:45454 [system_monitor.py:probe():183] Finished publishing system info
+2022-11-22 01:24:45,353 DEBUG   HandlerThread:45454 [handler.py:handle_request():139] handle_request: stop_status
+2022-11-22 01:24:45,353 DEBUG   SenderThread:45454 [sender.py:send_request():317] send_request: stop_status
+2022-11-22 01:24:45,356 INFO    HandlerThread:45454 [handler.py:handle_tbrecord():724] handling tbrecord: tbrecord {
+  log_dir: "runs/HalfCheetahBulletEnv-v4__half_ppo__42__1669080262"
+  save: true
+}
+control {
+  relay_id: "0be41bc3f8be4d5a99292ab5b363c4c0"
+}
+_info {
+  stream_id: "x6bl0lgj"
+}
+
+2022-11-22 01:24:45,357 DEBUG   HandlerThread:45454 [config_util.py:dict_from_config_file():100] no default config file found in config-defaults.yaml
+2022-11-22 01:24:45,369 INFO    Thread-13 :45454 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vmuser/Documents/cartpole/halfcheetah_ppo/wandb/run-20221122_012427-x6bl0lgj/files/conda-environment.yaml
+2022-11-22 01:24:45,369 INFO    Thread-13 :45454 [dir_watcher.py:_on_file_created():275] file/dir created: /home/vmuser/Documents/cartpole/halfcheetah_ppo/wandb/run-20221122_012427-x6bl0lgj/files/code/half_ppo.py
+2022-11-22 01:24:45,369 INFO    Thread-13 :45454 [dir_watcher.py:_on_file_created():275] file/dir created: /home/vmuser/Documents/cartpole/halfcheetah_ppo/wandb/run-20221122_012427-x6bl0lgj/files/wandb-metadata.json
+2022-11-22 01:24:45,369 INFO    Thread-13 :45454 [dir_watcher.py:_on_file_created():275] file/dir created: /home/vmuser/Documents/cartpole/halfcheetah_ppo/wandb/run-20221122_012427-x6bl0lgj/files/code
+2022-11-22 01:24:45,501 DEBUG   HandlerThread:45454 [handler.py:handle_request():139] handle_request: poll_exit
+2022-11-22 01:24:45,502 DEBUG   HandlerThread:45454 [handler.py:handle_request():139] handle_request: keepalive
+2022-11-22 01:24:45,502 DEBUG   HandlerThread:45454 [handler.py:handle_request():139] handle_request: keepalive
+2022-11-22 01:24:45,635 DEBUG   SenderThread:45454 [sender.py:send():303] send: telemetry
+2022-11-22 01:24:45,635 DEBUG   SenderThread:45454 [sender.py:send():303] send: tbrecord
+2022-11-22 01:24:45,636 DEBUG   SenderThread:45454 [sender.py:send():303] send: exit
+2022-11-22 01:24:45,636 INFO    SenderThread:45454 [sender.py:send_exit():442] handling exit code: 1
+2022-11-22 01:24:45,637 INFO    SenderThread:45454 [sender.py:send_exit():444] handling runtime: 17
+2022-11-22 01:24:45,638 INFO    SenderThread:45454 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-22 01:24:45,638 INFO    SenderThread:45454 [sender.py:send_exit():450] send defer
+2022-11-22 01:24:45,639 DEBUG   SenderThread:45454 [sender.py:send_request():317] send_request: poll_exit
+2022-11-22 01:24:45,639 DEBUG   SenderThread:45454 [sender.py:send():303] send: files
+2022-11-22 01:24:45,639 INFO    SenderThread:45454 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2022-11-22 01:24:45,639 INFO    SenderThread:45454 [sender.py:_save_file():1171] saving file code/half_ppo.py with policy now
+2022-11-22 01:24:45,639 DEBUG   SenderThread:45454 [sender.py:send():303] send: files
+2022-11-22 01:24:45,640 INFO    SenderThread:45454 [sender.py:_save_file():1171] saving file events.out.tfevents.1669080273.ready-for-rename.45322.0 with policy live
+2022-11-22 01:24:45,644 DEBUG   HandlerThread:45454 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 01:24:45,645 INFO    HandlerThread:45454 [handler.py:handle_request_defer():162] handle defer: 0
+2022-11-22 01:24:45,645 DEBUG   SenderThread:45454 [sender.py:send_request():317] send_request: defer
+2022-11-22 01:24:45,647 INFO    SenderThread:45454 [sender.py:send_request_defer():459] handle sender defer: 0
+2022-11-22 01:24:45,651 INFO    SenderThread:45454 [sender.py:transition_state():463] send defer: 1
+2022-11-22 01:24:45,652 DEBUG   HandlerThread:45454 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 01:24:45,652 INFO    HandlerThread:45454 [handler.py:handle_request_defer():162] handle defer: 1
+2022-11-22 01:24:45,652 INFO    HandlerThread:45454 [system_monitor.py:finish():160] Stopping system monitor
+2022-11-22 01:24:45,652 DEBUG   SystemMonitor:45454 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2022-11-22 01:24:45,653 DEBUG   SystemMonitor:45454 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2022-11-22 01:24:45,653 DEBUG   SystemMonitor:45454 [system_monitor.py:_start():141] Publishing last batch of metrics
+2022-11-22 01:24:45,653 INFO    HandlerThread:45454 [interfaces.py:finish():173] Joined cpu
+2022-11-22 01:24:45,654 INFO    HandlerThread:45454 [interfaces.py:finish():173] Joined disk
+2022-11-22 01:24:45,692 INFO    HandlerThread:45454 [interfaces.py:finish():173] Joined gpu
+2022-11-22 01:24:45,692 INFO    HandlerThread:45454 [interfaces.py:finish():173] Joined memory
+2022-11-22 01:24:45,692 INFO    HandlerThread:45454 [interfaces.py:finish():173] Joined network
+2022-11-22 01:24:45,692 DEBUG   SenderThread:45454 [sender.py:send_request():317] send_request: defer
+2022-11-22 01:24:45,692 INFO    SenderThread:45454 [sender.py:send_request_defer():459] handle sender defer: 1
+2022-11-22 01:24:45,692 INFO    SenderThread:45454 [sender.py:transition_state():463] send defer: 2
+2022-11-22 01:24:45,692 DEBUG   SenderThread:45454 [sender.py:send():303] send: stats
+2022-11-22 01:24:45,693 DEBUG   HandlerThread:45454 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 01:24:45,693 INFO    HandlerThread:45454 [handler.py:handle_request_defer():162] handle defer: 2
+2022-11-22 01:24:45,693 DEBUG   SenderThread:45454 [sender.py:send_request():317] send_request: defer
+2022-11-22 01:24:45,693 INFO    SenderThread:45454 [sender.py:send_request_defer():459] handle sender defer: 2
+2022-11-22 01:24:45,693 INFO    SenderThread:45454 [sender.py:transition_state():463] send defer: 3
+2022-11-22 01:24:45,693 DEBUG   HandlerThread:45454 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 01:24:45,693 INFO    HandlerThread:45454 [handler.py:handle_request_defer():162] handle defer: 3
+2022-11-22 01:24:45,939 INFO    Thread-19 :45454 [upload_job.py:push():123] Skipped uploading /tmp/tmpkj02a8dowandb/pahah7t8-code/half_ppo.py
+2022-11-22 01:24:46,369 INFO    Thread-13 :45454 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vmuser/Documents/cartpole/halfcheetah_ppo/wandb/run-20221122_012427-x6bl0lgj/files/wandb-summary.json
+2022-11-22 01:24:46,369 INFO    Thread-13 :45454 [dir_watcher.py:_on_file_created():275] file/dir created: /home/vmuser/Documents/cartpole/halfcheetah_ppo/wandb/run-20221122_012427-x6bl0lgj/files/events.out.tfevents.1669080273.ready-for-rename.45322.0
+2022-11-22 01:24:46,369 INFO    Thread-13 :45454 [dir_watcher.py:_on_file_created():275] file/dir created: /home/vmuser/Documents/cartpole/halfcheetah_ppo/wandb/run-20221122_012427-x6bl0lgj/files/output.log
+2022-11-22 01:24:46,564 INFO    Thread-20 :45454 [upload_job.py:push():143] Uploaded file /tmp/tmpkj02a8dowandb/wyf0i551-events.out.tfevents.1669080273.ready-for-rename.45322.0
+2022-11-22 01:24:46,733 INFO    Thread-18 :45454 [upload_job.py:push():143] Uploaded file /tmp/tmpkj02a8dowandb/n6bl4lsv-wandb-metadata.json
+2022-11-22 01:24:48,370 INFO    Thread-13 :45454 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vmuser/Documents/cartpole/halfcheetah_ppo/wandb/run-20221122_012427-x6bl0lgj/files/output.log
+2022-11-22 01:24:52,612 DEBUG   SenderThread:45454 [sender.py:send_request():317] send_request: defer
+2022-11-22 01:24:52,612 INFO    SenderThread:45454 [sender.py:send_request_defer():459] handle sender defer: 3
+2022-11-22 01:24:52,612 DEBUG   HandlerThread:45454 [handler.py:handle_request():139] handle_request: keepalive
+2022-11-22 01:24:52,612 INFO    SenderThread:45454 [sender.py:transition_state():463] send defer: 4
+2022-11-22 01:24:52,613 DEBUG   SenderThread:45454 [sender.py:send():303] send: history
+2022-11-22 01:24:52,614 DEBUG   SenderThread:45454 [sender.py:send():303] send: summary
+2022-11-22 01:24:52,615 DEBUG   HandlerThread:45454 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 01:24:52,615 INFO    HandlerThread:45454 [handler.py:handle_request_defer():162] handle defer: 4
+2022-11-22 01:24:52,615 INFO    SenderThread:45454 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-22 01:24:52,616 DEBUG   SenderThread:45454 [sender.py:send():303] send: summary
+2022-11-22 01:24:52,628 INFO    SenderThread:45454 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2022-11-22 01:24:52,628 DEBUG   SenderThread:45454 [sender.py:send_request():317] send_request: defer
+2022-11-22 01:24:52,628 INFO    SenderThread:45454 [sender.py:send_request_defer():459] handle sender defer: 4
+2022-11-22 01:24:52,628 INFO    SenderThread:45454 [sender.py:transition_state():463] send defer: 5
+2022-11-22 01:24:52,628 DEBUG   HandlerThread:45454 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 01:24:52,628 INFO    HandlerThread:45454 [handler.py:handle_request_defer():162] handle defer: 5
+2022-11-22 01:24:52,628 DEBUG   SenderThread:45454 [sender.py:send_request():317] send_request: defer
+2022-11-22 01:24:52,629 INFO    SenderThread:45454 [sender.py:send_request_defer():459] handle sender defer: 5
+2022-11-22 01:24:52,944 INFO    SenderThread:45454 [sender.py:transition_state():463] send defer: 6
+2022-11-22 01:24:52,945 DEBUG   HandlerThread:45454 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 01:24:52,945 INFO    HandlerThread:45454 [handler.py:handle_request_defer():162] handle defer: 6
+2022-11-22 01:24:52,945 DEBUG   SenderThread:45454 [sender.py:send_request():317] send_request: defer
+2022-11-22 01:24:52,945 INFO    SenderThread:45454 [sender.py:send_request_defer():459] handle sender defer: 6
+2022-11-22 01:24:53,371 INFO    Thread-13 :45454 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vmuser/Documents/cartpole/halfcheetah_ppo/wandb/run-20221122_012427-x6bl0lgj/files/config.yaml
+2022-11-22 01:24:53,371 INFO    Thread-13 :45454 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vmuser/Documents/cartpole/halfcheetah_ppo/wandb/run-20221122_012427-x6bl0lgj/files/wandb-summary.json
+2022-11-22 01:24:53,645 INFO    SenderThread:45454 [sender.py:transition_state():463] send defer: 7
+2022-11-22 01:24:53,645 DEBUG   HandlerThread:45454 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 01:24:53,646 INFO    HandlerThread:45454 [handler.py:handle_request_defer():162] handle defer: 7
+2022-11-22 01:24:53,646 DEBUG   SenderThread:45454 [sender.py:send_request():317] send_request: defer
+2022-11-22 01:24:53,646 INFO    SenderThread:45454 [sender.py:send_request_defer():459] handle sender defer: 7
+2022-11-22 01:24:53,646 INFO    SenderThread:45454 [dir_watcher.py:finish():362] shutting down directory watcher
+2022-11-22 01:24:54,371 INFO    Thread-13 :45454 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/vmuser/Documents/cartpole/halfcheetah_ppo/wandb/run-20221122_012427-x6bl0lgj/files/output.log
+2022-11-22 01:24:54,372 INFO    SenderThread:45454 [dir_watcher.py:finish():392] scan: /home/vmuser/Documents/cartpole/halfcheetah_ppo/wandb/run-20221122_012427-x6bl0lgj/files
+2022-11-22 01:24:54,372 INFO    SenderThread:45454 [dir_watcher.py:finish():406] scan save: /home/vmuser/Documents/cartpole/halfcheetah_ppo/wandb/run-20221122_012427-x6bl0lgj/files/config.yaml config.yaml
+2022-11-22 01:24:54,372 INFO    SenderThread:45454 [dir_watcher.py:finish():406] scan save: /home/vmuser/Documents/cartpole/halfcheetah_ppo/wandb/run-20221122_012427-x6bl0lgj/files/requirements.txt requirements.txt
+2022-11-22 01:24:54,373 INFO    SenderThread:45454 [dir_watcher.py:finish():406] scan save: /home/vmuser/Documents/cartpole/halfcheetah_ppo/wandb/run-20221122_012427-x6bl0lgj/files/events.out.tfevents.1669080273.ready-for-rename.45322.0 events.out.tfevents.1669080273.ready-for-rename.45322.0
+2022-11-22 01:24:54,373 INFO    SenderThread:45454 [dir_watcher.py:finish():406] scan save: /home/vmuser/Documents/cartpole/halfcheetah_ppo/wandb/run-20221122_012427-x6bl0lgj/files/wandb-metadata.json wandb-metadata.json
+2022-11-22 01:24:54,373 INFO    SenderThread:45454 [dir_watcher.py:finish():406] scan save: /home/vmuser/Documents/cartpole/halfcheetah_ppo/wandb/run-20221122_012427-x6bl0lgj/files/conda-environment.yaml conda-environment.yaml
+2022-11-22 01:24:54,373 INFO    SenderThread:45454 [dir_watcher.py:finish():406] scan save: /home/vmuser/Documents/cartpole/halfcheetah_ppo/wandb/run-20221122_012427-x6bl0lgj/files/output.log output.log
+2022-11-22 01:24:54,373 INFO    SenderThread:45454 [dir_watcher.py:finish():406] scan save: /home/vmuser/Documents/cartpole/halfcheetah_ppo/wandb/run-20221122_012427-x6bl0lgj/files/wandb-summary.json wandb-summary.json
+2022-11-22 01:24:54,373 INFO    SenderThread:45454 [dir_watcher.py:finish():406] scan save: /home/vmuser/Documents/cartpole/halfcheetah_ppo/wandb/run-20221122_012427-x6bl0lgj/files/code/half_ppo.py code/half_ppo.py
+2022-11-22 01:24:54,373 INFO    SenderThread:45454 [sender.py:transition_state():463] send defer: 8
+2022-11-22 01:24:54,377 DEBUG   HandlerThread:45454 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 01:24:54,379 INFO    HandlerThread:45454 [handler.py:handle_request_defer():162] handle defer: 8
+2022-11-22 01:24:54,383 DEBUG   SenderThread:45454 [sender.py:send_request():317] send_request: defer
+2022-11-22 01:24:54,383 INFO    SenderThread:45454 [sender.py:send_request_defer():459] handle sender defer: 8
+2022-11-22 01:24:54,383 INFO    SenderThread:45454 [file_pusher.py:finish():168] shutting down file pusher
+2022-11-22 01:24:54,654 DEBUG   HandlerThread:45454 [handler.py:handle_request():139] handle_request: keepalive
+2022-11-22 01:24:55,273 INFO    Thread-21 :45454 [upload_job.py:push():143] Uploaded file /home/vmuser/Documents/cartpole/halfcheetah_ppo/wandb/run-20221122_012427-x6bl0lgj/files/config.yaml
+2022-11-22 01:24:55,312 INFO    Thread-25 :45454 [upload_job.py:push():143] Uploaded file /home/vmuser/Documents/cartpole/halfcheetah_ppo/wandb/run-20221122_012427-x6bl0lgj/files/wandb-summary.json
+2022-11-22 01:24:55,317 INFO    Thread-23 :45454 [upload_job.py:push():143] Uploaded file /home/vmuser/Documents/cartpole/halfcheetah_ppo/wandb/run-20221122_012427-x6bl0lgj/files/conda-environment.yaml
+2022-11-22 01:24:55,455 INFO    Thread-24 :45454 [upload_job.py:push():143] Uploaded file /home/vmuser/Documents/cartpole/halfcheetah_ppo/wandb/run-20221122_012427-x6bl0lgj/files/output.log
+2022-11-22 01:24:55,460 INFO    Thread-22 :45454 [upload_job.py:push():143] Uploaded file /home/vmuser/Documents/cartpole/halfcheetah_ppo/wandb/run-20221122_012427-x6bl0lgj/files/requirements.txt
+2022-11-22 01:24:55,661 INFO    Thread-12 :45454 [sender.py:transition_state():463] send defer: 9
+2022-11-22 01:24:55,661 DEBUG   HandlerThread:45454 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 01:24:55,661 INFO    HandlerThread:45454 [handler.py:handle_request_defer():162] handle defer: 9
+2022-11-22 01:24:55,661 DEBUG   SenderThread:45454 [sender.py:send_request():317] send_request: defer
+2022-11-22 01:24:55,661 INFO    SenderThread:45454 [sender.py:send_request_defer():459] handle sender defer: 9
+2022-11-22 01:24:55,661 INFO    SenderThread:45454 [file_pusher.py:join():173] waiting for file pusher
+2022-11-22 01:24:55,661 INFO    SenderThread:45454 [sender.py:transition_state():463] send defer: 10
+2022-11-22 01:24:55,662 DEBUG   HandlerThread:45454 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 01:24:55,662 INFO    HandlerThread:45454 [handler.py:handle_request_defer():162] handle defer: 10
+2022-11-22 01:24:55,662 DEBUG   SenderThread:45454 [sender.py:send_request():317] send_request: defer
+2022-11-22 01:24:55,662 INFO    SenderThread:45454 [sender.py:send_request_defer():459] handle sender defer: 10
+2022-11-22 01:24:55,944 INFO    SenderThread:45454 [sender.py:transition_state():463] send defer: 11
+2022-11-22 01:24:55,944 DEBUG   HandlerThread:45454 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 01:24:55,944 INFO    HandlerThread:45454 [handler.py:handle_request_defer():162] handle defer: 11
+2022-11-22 01:24:55,944 DEBUG   SenderThread:45454 [sender.py:send_request():317] send_request: defer
+2022-11-22 01:24:55,944 INFO    SenderThread:45454 [sender.py:send_request_defer():459] handle sender defer: 11
+2022-11-22 01:24:55,944 INFO    SenderThread:45454 [sender.py:transition_state():463] send defer: 12
+2022-11-22 01:24:55,945 DEBUG   HandlerThread:45454 [handler.py:handle_request():139] handle_request: defer
+2022-11-22 01:24:55,945 INFO    HandlerThread:45454 [handler.py:handle_request_defer():162] handle defer: 12
+2022-11-22 01:24:55,945 DEBUG   SenderThread:45454 [sender.py:send():303] send: final
+2022-11-22 01:24:55,945 DEBUG   SenderThread:45454 [sender.py:send():303] send: footer
+2022-11-22 01:24:55,945 DEBUG   SenderThread:45454 [sender.py:send_request():317] send_request: defer
+2022-11-22 01:24:55,946 INFO    SenderThread:45454 [sender.py:send_request_defer():459] handle sender defer: 12
+2022-11-22 01:24:55,947 DEBUG   HandlerThread:45454 [handler.py:handle_request():139] handle_request: poll_exit
+2022-11-22 01:24:55,947 DEBUG   HandlerThread:45454 [handler.py:handle_request():139] handle_request: server_info
+2022-11-22 01:24:55,947 DEBUG   HandlerThread:45454 [handler.py:handle_request():139] handle_request: get_summary
+2022-11-22 01:24:55,947 DEBUG   HandlerThread:45454 [handler.py:handle_request():139] handle_request: sampled_history
+2022-11-22 01:24:55,947 DEBUG   SenderThread:45454 [sender.py:send_request():317] send_request: poll_exit
+2022-11-22 01:24:55,948 DEBUG   SenderThread:45454 [sender.py:send_request():317] send_request: server_info
+2022-11-22 01:24:56,672 INFO    MainThread:45454 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2022-11-22 01:24:56,672 INFO    MainThread:45454 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2022-11-22 01:24:56,672 INFO    MainThread:45454 [wandb_run.py:_footer_sync_info():3333] logging synced files
+2022-11-22 01:24:56,673 DEBUG   HandlerThread:45454 [handler.py:handle_request():139] handle_request: shutdown
+2022-11-22 01:24:56,673 INFO    HandlerThread:45454 [handler.py:finish():814] shutting down handler
+2022-11-22 01:24:56,945 INFO    WriterThread:45454 [datastore.py:close():279] close: /home/vmuser/Documents/cartpole/halfcheetah_ppo/wandb/run-20221122_012427-x6bl0lgj/run-x6bl0lgj.wandb
+2022-11-22 01:24:57,672 INFO    SenderThread:45454 [sender.py:finish():1331] shutting down sender
+2022-11-22 01:24:57,672 INFO    SenderThread:45454 [file_pusher.py:finish():168] shutting down file pusher
+2022-11-22 01:24:57,672 INFO    SenderThread:45454 [file_pusher.py:join():173] waiting for file pusher
+2022-11-22 01:24:57,675 INFO    MainThread:45454 [internal.py:handle_exit():78] Internal process exited

@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "half_ppo.py", line 321, in <module>
+    envs = gym.vector.SyncVectorEnv(
+  File "/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/gym/vector/sync_vector_env.py", line 57, in __init__
+    self.envs = [env_fn() for env_fn in env_fns]
+  File "/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/gym/vector/sync_vector_env.py", line 57, in <listcomp>
+    self.envs = [env_fn() for env_fn in env_fns]
+  File "half_ppo.py", line 86, in thunk
+    env = gym.make(gym_id)
+  File "/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/gym/envs/registration.py", line 676, in make
+    return registry.make(id, **kwargs)
+  File "/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/gym/envs/registration.py", line 518, in make
+    spec = self.spec(path)
+  File "/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/gym/envs/registration.py", line 540, in spec
+    return self.env_specs[id]
+  File "/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/gym/envs/registration.py", line 376, in __getitem__
+    self._assert_version_exists(namespace, name, version)
+  File "/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/gym/envs/registration.py", line 369, in _assert_version_exists
+    raise error.VersionNotFound(message)
+gym.error.VersionNotFound: Environment version `v3` for `HalfCheetahBulletEnv` could not be found. `HalfCheetahBulletEnv` provides the versioned environments: [ `v0` ].
