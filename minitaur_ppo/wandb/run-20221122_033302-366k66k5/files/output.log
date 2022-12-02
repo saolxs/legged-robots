@@ -1,0 +1,288 @@
+current_dir=/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/pybullet_envs/bullet
+urdf_root=/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/pybullet_data
+Box([  -3.1515927   -3.1515927   -3.1515927   -3.1515927   -3.1515927
+   -3.1515927   -3.1515927   -3.1515927 -167.72488   -167.72488
+ -167.72488   -167.72488   -167.72488   -167.72488   -167.72488
+ -167.72488     -5.71        -5.71        -5.71        -5.71
+   -5.71        -5.71        -5.71        -5.71        -1.01
+   -1.01        -1.01        -1.01     ], [  3.1515927   3.1515927   3.1515927   3.1515927   3.1515927   3.1515927
+   3.1515927   3.1515927 167.72488   167.72488   167.72488   167.72488
+ 167.72488   167.72488   167.72488   167.72488     5.71        5.71
+   5.71        5.71        5.71        5.71        5.71        5.71
+   1.01        1.01        1.01        1.01     ], (28,), float32)
+/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+global_step=252, return_per_episode=-0.3050406873226166
+global_step=534, return_per_episode=-0.7556144595146179
+global_step=870, return_per_episode=-0.6796618103981018
+global_step=930, return_per_episode=-0.14960931241512299
+global_step=1400, return_per_episode=-0.9332004189491272
+global_step=1671, return_per_episode=-0.8121254444122314
+Time Taken: 137
+global_step=2298, return_per_episode=-1.4913039207458496
+global_step=3298, return_per_episode=-1.6017565727233887
+global_step=3657, return_per_episode=-0.38246771693229675
+global_step=3785, return_per_episode=-0.2298174351453781
+global_step=3879, return_per_episode=-0.19930697977542877
+global_step=3921, return_per_episode=-0.14834773540496826
+Time Taken: 140
+global_step=4412, return_per_episode=-1.6053837537765503
+global_step=5368, return_per_episode=-1.4439606666564941
+global_step=5808, return_per_episode=-0.8409485816955566
+Time Taken: 136
+global_step=6264, return_per_episode=-0.4923775792121887
+global_step=6310, return_per_episode=-0.10672520101070404
+global_step=6727, return_per_episode=-1.002001404762268
+global_step=6925, return_per_episode=-0.5224419832229614
+global_step=7188, return_per_episode=0.041160304099321365
+global_step=7307, return_per_episode=-0.06699509173631668
+Time Taken: 136
+global_step=8307, return_per_episode=-1.502384901046753
+global_step=8471, return_per_episode=-0.3400968313217163
+global_step=9037, return_per_episode=-0.19211776554584503
+global_step=9413, return_per_episode=-0.7451968193054199
+global_step=9481, return_per_episode=-0.08402113616466522
+Time Taken: 137
+global_step=10416, return_per_episode=0.1417270302772522
+global_step=10640, return_per_episode=-0.30427995324134827
+global_step=11539, return_per_episode=-0.37810808420181274
+global_step=11605, return_per_episode=0.04092659801244736
+global_step=11865, return_per_episode=-0.12804412841796875
+Time Taken: 138
+global_step=12738, return_per_episode=-0.7018244862556458
+global_step=13353, return_per_episode=-0.6055351495742798
+global_step=13397, return_per_episode=-0.01733488216996193
+global_step=13642, return_per_episode=0.061988715082407
+global_step=13730, return_per_episode=-0.21677511930465698
+global_step=13898, return_per_episode=0.04057605564594269
+global_step=14002, return_per_episode=0.03991283103823662
+global_step=14105, return_per_episode=-0.1796453893184662
+Time Taken: 138
+global_step=14607, return_per_episode=-0.5539710521697998
+global_step=14687, return_per_episode=-0.0464923158288002
+global_step=14877, return_per_episode=0.20301613211631775
+global_step=15201, return_per_episode=-0.14597485959529877
+global_step=15287, return_per_episode=0.010837787762284279
+global_step=15792, return_per_episode=-0.8172882795333862
+global_step=15915, return_per_episode=-0.12120283395051956
+global_step=16048, return_per_episode=-0.2928565740585327
+Time Taken: 138
+global_step=16719, return_per_episode=-0.10799466073513031
+global_step=16807, return_per_episode=-0.09570281952619553
+global_step=16887, return_per_episode=-0.16794481873512268
+global_step=17060, return_per_episode=-0.16105084121227264
+global_step=17356, return_per_episode=-0.030377397313714027
+global_step=17672, return_per_episode=0.08018375933170319
+global_step=17716, return_per_episode=-0.027086839079856873
+global_step=17986, return_per_episode=0.12296393513679504
+Time Taken: 139
+global_step=18528, return_per_episode=-0.21655607223510742
+global_step=18862, return_per_episode=0.11585763096809387
+global_step=19080, return_per_episode=-0.1099356859922409
+global_step=19172, return_per_episode=-0.10061323642730713
+global_step=19376, return_per_episode=-0.22970075905323029
+global_step=19518, return_per_episode=-0.14922049641609192
+global_step=19572, return_per_episode=-0.03250996023416519
+global_step=20102, return_per_episode=-0.9926741719245911
+global_step=20425, return_per_episode=-0.18833450973033905
+Time Taken: 139
+global_step=20931, return_per_episode=0.25283002853393555
+global_step=21529, return_per_episode=0.181382954120636
+global_step=21582, return_per_episode=-0.07416945695877075
+global_step=22429, return_per_episode=-0.07120929658412933
+Time Taken: 139
+global_step=22618, return_per_episode=-0.08293292671442032
+global_step=23359, return_per_episode=-0.11041102558374405
+global_step=24273, return_per_episode=0.9207845330238342
+Time Taken: 140
+global_step=25029, return_per_episode=0.3582005202770233
+global_step=25617, return_per_episode=0.16607782244682312
+global_step=25793, return_per_episode=0.1807495504617691
+Time Taken: 139
+global_step=26638, return_per_episode=0.09361110627651215
+global_step=27053, return_per_episode=0.06116966903209686
+global_step=27505, return_per_episode=0.5755760073661804
+global_step=27903, return_per_episode=0.04044187068939209
+global_step=28027, return_per_episode=0.04646001756191254
+global_step=28184, return_per_episode=0.10624673217535019
+Time Taken: 139
+global_step=28800, return_per_episode=0.32266107201576233
+global_step=29800, return_per_episode=0.6553402543067932
+global_step=30486, return_per_episode=0.7638118863105774
+global_step=30635, return_per_episode=0.06444937735795975
+Time Taken: 138
+global_step=31401, return_per_episode=0.42869654297828674
+global_step=31503, return_per_episode=0.07476025074720383
+global_step=31810, return_per_episode=0.27969983220100403
+global_step=32704, return_per_episode=0.5311732292175293
+Time Taken: 137
+global_step=32812, return_per_episode=0.07737936824560165
+global_step=33710, return_per_episode=0.961480438709259
+global_step=34198, return_per_episode=0.8637153506278992
+global_step=34576, return_per_episode=0.5888749957084656
+global_step=34628, return_per_episode=-0.10834789276123047
+global_step=34692, return_per_episode=0.025092221796512604
+Time Taken: 137
+global_step=34863, return_per_episode=0.18508853018283844
+global_step=34947, return_per_episode=0.012384682893753052
+global_step=35575, return_per_episode=0.7751885652542114
+global_step=36342, return_per_episode=0.7020352482795715
+global_step=36677, return_per_episode=0.5896857380867004
+Time Taken: 137
+global_step=37050, return_per_episode=-0.24473512172698975
+global_step=37107, return_per_episode=-0.04107682779431343
+global_step=37321, return_per_episode=0.3902186155319214
+global_step=37714, return_per_episode=0.2519320249557495
+global_step=38086, return_per_episode=0.7473873496055603
+global_step=38564, return_per_episode=0.09502455592155457
+global_step=38664, return_per_episode=0.056073881685733795
+global_step=38797, return_per_episode=0.21376773715019226
+Time Taken: 137
+global_step=39147, return_per_episode=0.5089333057403564
+global_step=39517, return_per_episode=0.8629857301712036
+global_step=40008, return_per_episode=0.43776002526283264
+global_step=40151, return_per_episode=0.1813371628522873
+global_step=40224, return_per_episode=0.030896637588739395
+global_step=40296, return_per_episode=0.05530675873160362
+global_step=40376, return_per_episode=-0.06802375614643097
+global_step=40590, return_per_episode=0.22314292192459106
+global_step=40931, return_per_episode=0.3095143139362335
+Time Taken: 137
+global_step=41317, return_per_episode=0.5374413132667542
+global_step=42317, return_per_episode=1.3508028984069824
+Time Taken: 137
+global_step=43317, return_per_episode=1.7562252283096313
+global_step=43984, return_per_episode=1.898566722869873
+global_step=44410, return_per_episode=0.5250086188316345
+global_step=44922, return_per_episode=0.9507179260253906
+global_step=44979, return_per_episode=-0.018205679953098297
+Time Taken: 136
+global_step=45300, return_per_episode=0.6789273619651794
+global_step=45446, return_per_episode=0.37273702025413513
+global_step=45879, return_per_episode=0.39463767409324646
+global_step=46341, return_per_episode=0.837733268737793
+global_step=46594, return_per_episode=0.4668169617652893
+global_step=46963, return_per_episode=0.64111328125
+Time Taken: 136
+global_step=47466, return_per_episode=1.4454869031906128
+global_step=47596, return_per_episode=0.506827712059021
+global_step=48380, return_per_episode=2.4614145755767822
+Time Taken: 136
+global_step=49380, return_per_episode=2.085400342941284
+global_step=49581, return_per_episode=0.9033628106117249
+global_step=49880, return_per_episode=0.6304101347923279
+global_step=50273, return_per_episode=1.0331512689590454
+global_step=50834, return_per_episode=0.938868522644043
+global_step=50964, return_per_episode=0.33834415674209595
+Time Taken: 137
+global_step=51964, return_per_episode=2.7188985347747803
+global_step=52393, return_per_episode=0.9794942736625671
+global_step=53074, return_per_episode=1.698272466659546
+Time Taken: 137
+global_step=54074, return_per_episode=2.318108081817627
+global_step=54362, return_per_episode=0.5651123523712158
+global_step=54700, return_per_episode=1.0232011079788208
+global_step=54919, return_per_episode=0.40395647287368774
+global_step=55078, return_per_episode=0.4353598654270172
+Time Taken: 138
+global_step=55435, return_per_episode=1.2613481283187866
+global_step=56435, return_per_episode=2.897296905517578
+Time Taken: 138
+global_step=57435, return_per_episode=3.0389904975891113
+global_step=58435, return_per_episode=2.6940338611602783
+global_step=59239, return_per_episode=2.2501304149627686
+Time Taken: 139
+global_step=59801, return_per_episode=2.4248483180999756
+global_step=60801, return_per_episode=2.992088556289673
+Time Taken: 139
+global_step=61569, return_per_episode=2.671834945678711
+global_step=61762, return_per_episode=0.5274048447608948
+global_step=62421, return_per_episode=2.420145273208618
+global_step=62539, return_per_episode=0.3750484585762024
+global_step=62921, return_per_episode=1.331615686416626
+Time Taken: 139
+global_step=63493, return_per_episode=1.9722888469696045
+global_step=64493, return_per_episode=3.28993558883667
+global_step=64646, return_per_episode=0.4545987546443939
+global_step=65021, return_per_episode=1.2936344146728516
+global_step=65533, return_per_episode=2.1590418815612793
+Time Taken: 139
+global_step=66370, return_per_episode=2.712676525115967
+global_step=67370, return_per_episode=4.435299396514893
+global_step=67565, return_per_episode=0.48982036113739014
+Time Taken: 139
+global_step=68472, return_per_episode=3.261725425720215
+global_step=68700, return_per_episode=0.4974658191204071
+global_step=69046, return_per_episode=1.307900071144104
+global_step=69409, return_per_episode=1.5660275220870972
+
+Time Taken: 139
+global_step=70151, return_per_episode=3.0513854026794434
+global_step=71151, return_per_episode=3.2798538208007812
+Time Taken: 139
+global_step=72151, return_per_episode=2.930269956588745
+global_step=72352, return_per_episode=0.743806004524231
+global_step=72758, return_per_episode=1.487389326095581
+Time Taken: 139
+global_step=73758, return_per_episode=3.750920295715332
+global_step=74484, return_per_episode=2.9625253677368164
+global_step=74592, return_per_episode=0.4383176863193512
+global_step=75592, return_per_episode=4.718455791473389
+Time Taken: 139
+global_step=75833, return_per_episode=0.9496507048606873
+global_step=75933, return_per_episode=0.31847792863845825
+global_step=76336, return_per_episode=1.3450788259506226
+global_step=76922, return_per_episode=2.5787434577941895
+global_step=77482, return_per_episode=2.568120002746582
+Time Taken: 139
+global_step=78482, return_per_episode=4.190502166748047
+global_step=79482, return_per_episode=4.076401710510254
+Time Taken: 139
+global_step=80482, return_per_episode=3.7509853839874268
+global_step=80552, return_per_episode=0.2081972062587738
+global_step=80664, return_per_episode=0.4516473412513733
+global_step=80705, return_per_episode=0.11021865904331207
+global_step=81012, return_per_episode=1.64410400390625
+Time Taken: 139
+global_step=82012, return_per_episode=5.34550142288208
+global_step=82136, return_per_episode=0.582743227481842
+global_step=82188, return_per_episode=0.061108388006687164
+global_step=82473, return_per_episode=1.6408156156539917
+global_step=82861, return_per_episode=1.2862482070922852
+global_step=83147, return_per_episode=1.3063085079193115
+global_step=83481, return_per_episode=1.3022135496139526
+Time Taken: 139
+global_step=84314, return_per_episode=4.14415979385376
+global_step=84393, return_per_episode=0.33319947123527527
+global_step=84731, return_per_episode=1.880868673324585
+global_step=85261, return_per_episode=2.579174518585205
+global_step=85421, return_per_episode=0.9615680575370789
+Time Taken: 139
+global_step=86050, return_per_episode=3.8335323333740234
+global_step=86145, return_per_episode=0.23428651690483093
+global_step=86857, return_per_episode=2.5786473751068115
+global_step=87052, return_per_episode=1.1333327293395996
+global_step=88052, return_per_episode=5.134339809417725
+Time Taken: 140
+global_step=88767, return_per_episode=4.792064666748047
+global_step=88836, return_per_episode=0.2591748535633087
+global_step=89836, return_per_episode=5.384059906005859
+Time Taken: 139
+global_step=90407, return_per_episode=2.3222367763519287
+global_step=90885, return_per_episode=2.5406720638275146
+global_step=91255, return_per_episode=1.8492237329483032
+global_step=92159, return_per_episode=4.538410186767578
+Time Taken: 139
+global_step=92253, return_per_episode=0.3587230145931244
+global_step=92769, return_per_episode=2.2218143939971924
+global_step=92806, return_per_episode=0.02896289713680744
+global_step=93806, return_per_episode=5.257203578948975
+global_step=93948, return_per_episode=0.7888920307159424
+Time Taken: 139
+global_step=94230, return_per_episode=1.424141526222229
+global_step=95230, return_per_episode=6.129550933837891
+global_step=96163, return_per_episode=5.167616844177246
+Time Taken: 139
+global_step=97163, return_per_episode=5.620408535003662
+global_step=97369, return_per_episode=1.4226393699645996
+Time Taken: 139

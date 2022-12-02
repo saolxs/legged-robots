@@ -1,0 +1,54 @@
+current_dir=/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/pybullet_envs/bullet
+urdf_root=/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/pybullet_data
+Box([  -3.1515927   -3.1515927   -3.1515927   -3.1515927   -3.1515927
+   -3.1515927   -3.1515927   -3.1515927 -167.72488   -167.72488
+ -167.72488   -167.72488   -167.72488   -167.72488   -167.72488
+ -167.72488     -5.71        -5.71        -5.71        -5.71
+   -5.71        -5.71        -5.71        -5.71        -1.01
+   -1.01        -1.01        -1.01     ], [  3.1515927   3.1515927   3.1515927   3.1515927   3.1515927   3.1515927
+   3.1515927   3.1515927 167.72488   167.72488   167.72488   167.72488
+ 167.72488   167.72488   167.72488   167.72488     5.71        5.71
+   5.71        5.71        5.71        5.71        5.71        5.71
+   1.01        1.01        1.01        1.01     ], (28,), float32)
+/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+Traceback (most recent call last):
+  File "minitaur_ppo.py", line 360, in <module>
+    update_ppo(envs, args, agent)
+  File "minitaur_ppo.py", line 213, in update_ppo
+    for batch_states, batch_logprobs, batch_actions, batch_advantages, batch_returns, batch_values, global_step in get_batches(envs, args, optimizer, agent, device):
+  File "minitaur_ppo.py", line 186, in get_batches
+    action, logprob, _, value = agent.action_value(nxt_state)
+  File "/home/vmuser/Documents/cartpole/minitaur_ppo/actor_critic.py", line 60, in action_value
+    mean  = self.actor(x)
+  File "/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/torch/nn/modules/container.py", line 117, in forward
+    input = module(input)
+  File "/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/torch/nn/modules/linear.py", line 93, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/torch/nn/functional.py", line 1690, in linear
+    ret = torch.addmm(bias, input, weight.t())
+RuntimeError: mat1 dim 1 must match mat2 dim 0
+Traceback (most recent call last):
+  File "minitaur_ppo.py", line 360, in <module>
+    update_ppo(envs, args, agent)
+  File "minitaur_ppo.py", line 213, in update_ppo
+    for batch_states, batch_logprobs, batch_actions, batch_advantages, batch_returns, batch_values, global_step in get_batches(envs, args, optimizer, agent, device):
+  File "minitaur_ppo.py", line 186, in get_batches
+    action, logprob, _, value = agent.action_value(nxt_state)
+  File "/home/vmuser/Documents/cartpole/minitaur_ppo/actor_critic.py", line 60, in action_value
+    mean  = self.actor(x)
+  File "/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/torch/nn/modules/container.py", line 117, in forward
+    input = module(input)
+  File "/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/torch/nn/modules/linear.py", line 93, in forward
+    return F.linear(input, self.weight, self.bias)
+  File "/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/torch/nn/functional.py", line 1690, in linear
+    ret = torch.addmm(bias, input, weight.t())
+RuntimeError: mat1 dim 1 must match mat2 dim 0

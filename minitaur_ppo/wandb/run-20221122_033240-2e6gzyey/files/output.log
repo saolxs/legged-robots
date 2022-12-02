@@ -1,0 +1,14 @@
+current_dir=/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/pybullet_envs/bullet
+urdf_root=/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/pybullet_data
+/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/gym/spaces/box.py:84: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  logger.warn(f"Box bound precision lowered by casting to {self.dtype}")
+Traceback (most recent call last):
+  File "minitaur_ppo.py", line 323, in <module>
+    envs = gym.vector.SyncVectorEnv(
+  File "/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/gym/vector/sync_vector_env.py", line 57, in __init__
+    self.envs = [env_fn() for env_fn in env_fns]
+  File "/home/vmuser/.conda/envs/rl/lib/python3.8/site-packages/gym/vector/sync_vector_env.py", line 57, in <listcomp>
+    self.envs = [env_fn() for env_fn in env_fns]
+  File "minitaur_ppo.py", line 97, in thunk
+    env = gym.wrappers.ContinuousToDiscrete(env)
+AttributeError: module 'gym.wrappers' has no attribute 'ContinuousToDiscrete'
