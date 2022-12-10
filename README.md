@@ -1,4 +1,4 @@
-# Code Base for Learning Locomotion Skills on Legged Robots
+# Code Base for Learning Locomotion Skills on Legged Robots Using Proximal Policy Optimization
 This repository contains the Code and Video Recordings for the Learning Locomotion Skills for legged robots Research Report by Samuel Oladejo.
 
 # Instructions
