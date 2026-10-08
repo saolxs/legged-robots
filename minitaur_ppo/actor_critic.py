@@ -42,7 +42,7 @@ class Agent(nn.Module):
         #the action weights are used to determine probabilities for each action (the higher the weight, the higher the probability)
         #uses ReLU activation functions for non-linearity, as well as a Sigmoid function at the final layer to ensure each weight can be used as a probability
         self.actor = nn.Sequential(
-            init_layer(nn.Linear(np.array(envs.single_observation_space.shape).prod(), 256)),
+            init_layer(nn.Linear(np.array(envs.single_observation_space.shape).prod(), 128)),
             nn.ReLU(),
             init_layer(nn.Linear(128, 64)),
             nn.ReLU(),
@@ -67,10 +67,11 @@ class Agent(nn.Module):
         return action, probs.log_prob(action).sum(1), probs.entropy().sum(1), self.critic(x)
 
     def save(self):
+        os.makedirs(os.path.dirname(self.checkpoint), exist_ok=True)
         torch.save(self.state_dict(), self.checkpoint)
     
     def load(self):
-        torch.load_state_dict(torch.load(self.checkpoint))
+        self.load_state_dict(torch.load(self.checkpoint))
         
     '''  
     def save_weights(self, iteration, state_rms):

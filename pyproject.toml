@@ -1,0 +1,29 @@
+[project]
+name = "legged-robots-ppo"
+version = "0.2.0"
+description = "PPO for legged-robot locomotion (Ant, HalfCheetah, Minitaur) on Gymnasium + MuJoCo + PyBullet"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "gymnasium[classic-control,mujoco]>=1.1",
+    "mujoco>=3.1",
+    "torch>=2.2",
+    "numpy>=1.26",
+    "tensorboard>=2.15",
+    "pybullet>=3.2.5",
+    "pybullet_envs_gymnasium>=0.6",
+    "moviepy>=1.0.3",
+    "matplotlib>=3.8",
+    "stable-baselines3>=2.7",
+]
+
+[project.optional-dependencies]
+track = ["wandb>=0.16"]
+dev = ["ruff>=0.5", "pyflakes>=3.2"]
+
+[tool.uv]
+package = false
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"

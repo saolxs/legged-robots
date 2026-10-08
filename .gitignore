@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+runs/
+wandb/
+videos/
+tmp/
+*.mp4
+MUJOCO_LOG.TXT
+playground/.venv/
+playground/runs/
+!results/*.mp4

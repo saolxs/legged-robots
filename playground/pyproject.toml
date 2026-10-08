@@ -1,0 +1,9 @@
+[project]
+name = "legged-robots-playground"
+version = "0.1.0"
+description = "MuJoCo Playground (MJX, GPU) experiments: Go1, Spot, G1, H1, T1 locomotion"
+requires-python = ">=3.11,<3.13"
+dependencies = ["jax[cuda12]<0.9", "playground", "mediapy", "imageio-ffmpeg", "matplotlib"]
+
+[tool.uv]
+package = false

@@ -61,10 +61,11 @@ class Agent(nn.Module):
         return action, probs.log_prob(action).sum(1), probs.entropy().sum(1), self.critic(x)
 
     def save(self):
+        os.makedirs(os.path.dirname(self.checkpoint), exist_ok=True)
         torch.save(self.state_dict(), self.checkpoint)
     
     def load(self):
-        torch.load_state_dict(torch.load(self.checkpoint))
+        self.load_state_dict(torch.load(self.checkpoint))
         
     '''  
     def save_weights(self, iteration, state_rms):
