@@ -8,12 +8,8 @@ import gym
 import pybullet_envs
 import numpy as np
 import torch
-from ray import tune
 import torch.nn as nn
 import torch.optim as optim
-import ptan
-from ptan.common.utils import RewardTracker, TBMeanTracker
-from ptan.experience import ExperienceSourceFirstLast, PrioritizedReplayBuffer, ExperienceReplayBuffer
 
 from torch.distributions.categorical import Categorical
 from torch.distributions.normal import Normal
@@ -323,38 +319,35 @@ if __name__ == "__main__":
     
     device = torch.device("cuda" if torch.cuda.is_available() and args.cuda else "cpu")
 
-    with RewardTracker(writer) as tracker:
-        with TBMeanTracker(writer, batch_size=10) as tb_tracker:
-            while True:
-                # env setup
-                envs = gym.vector.SyncVectorEnv(
-                    [make_env(args.gym_id, args.seed + i, i, args.capture_video, run_name) for i in range(args.num_envs)]
-                )
-                print(envs.single_observation_space)
-                
+    # env setup
+    envs = gym.vector.SyncVectorEnv(
+        [make_env(args.gym_id, args.seed + i, i, args.capture_video, run_name) for i in range(args.num_envs)]
+    )
+    print(envs.single_observation_space)
+    
 
-                assert isinstance(envs.single_action_space, gym.spaces.Box)
-                
-                agent = Agent(envs).to(device)
-                optimizer = optim.Adam(agent.parameters(), lr=args.learning_rate, eps=1e-5)
+    assert isinstance(envs.single_action_space, gym.spaces.Box)
+    
+    agent = Agent(envs).to(device)
+    optimizer = optim.Adam(agent.parameters(), lr=args.learning_rate, eps=1e-5)
 
-                #capture datapoints
-                state = torch.zeros((args.num_steps, args.num_envs) + envs.single_observation_space.shape).to(device)
-                actions = torch.zeros((args.num_steps, args.num_envs) + envs.single_action_space.shape).to(device)
-                logprobs = torch.zeros((args.num_steps, args.num_envs)).to(device)
-                values = torch.zeros((args.num_steps, args.num_envs)).to(device)
-                rewards = torch.zeros((args.num_steps, args.num_envs)).to(device)
-                dones = torch.zeros((args.num_steps, args.num_envs)).to(device)
-                
-                #track the number of environment steps
-                global_step = 0
-                start_time = time.time()
-                nxt_state = torch.Tensor(envs.reset()).to(device)
-                nxt_done = torch.zeros(args.num_envs).to(device)
-                #calculate the number of updates for the training
-                num_updates = args.total_timesteps // args.batch_size
+    #capture datapoints
+    state = torch.zeros((args.num_steps, args.num_envs) + envs.single_observation_space.shape).to(device)
+    actions = torch.zeros((args.num_steps, args.num_envs) + envs.single_action_space.shape).to(device)
+    logprobs = torch.zeros((args.num_steps, args.num_envs)).to(device)
+    values = torch.zeros((args.num_steps, args.num_envs)).to(device)
+    rewards = torch.zeros((args.num_steps, args.num_envs)).to(device)
+    dones = torch.zeros((args.num_steps, args.num_envs)).to(device)
+    
+    #track the number of environment steps
+    global_step = 0
+    start_time = time.time()
+    nxt_state = torch.Tensor(envs.reset()).to(device)
+    nxt_done = torch.zeros(args.num_envs).to(device)
+    #calculate the number of updates for the training
+    num_updates = args.total_timesteps // args.batch_size
 
 
-                #get_batches(envs, args, optimizer, agent, device)
-                
-                update_ppo(envs, args, agent)
+    #get_batches(envs, args, optimizer, agent, device)
+    
+    update_ppo(envs, args, agent)

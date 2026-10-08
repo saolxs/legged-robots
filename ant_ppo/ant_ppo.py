@@ -261,12 +261,6 @@ def update_ppo(envs, args, agent):
                 loss.backward()
                 nn.utils.clip_grad_norm_(agent.parameters(), args.max_grad_norm)
                 optimizer.step()
-                
-                with tune.checkpoint_dir(epoch) as checkpoint_dir:
-                    path = os.path.join(checkpoint_dir, "checkpoint")
-                    torch.save((net.state_dict(), optimizer.state_dict()), path)
-
-                tune.report(loss=(loss / val_steps), accuracy=correct / total)
 
             if args.target_kl is not None:
                 if approx_kl > args.target_kl:
@@ -337,13 +331,13 @@ if __name__ == "__main__":
     optimizer = optim.Adam(agent.parameters(), lr=args.learning_rate, eps=1e-5)
     
     
-    #'capture datapoints
+    #capture datapoints
     state = torch.zeros((args.num_steps, args.num_envs) + envs.single_observation_space.shape).to(device)
     actions = torch.zeros((args.num_steps, args.num_envs) + envs.single_action_space.shape).to(device)
     logprobs = torch.zeros((args.num_steps, args.num_envs)).to(device)
     values = torch.zeros((args.num_steps, args.num_envs)).to(device)
     rewards = torch.zeros((args.num_steps, args.num_envs)).to(device)
-    dones = torch.zeros((args.num_steps, args.num_envs)).to(device)'
+    dones = torch.zeros((args.num_steps, args.num_envs)).to(device)
     
     #track the number of environment steps
     global_step = 0

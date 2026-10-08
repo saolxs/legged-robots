@@ -1,0 +1,5 @@
+jax[cuda12]<0.9      # brax 0.14 still calls jax.device_put_replicated, removed in JAX 0.10
+playground          # mujoco_playground: MJX environments + Brax PPO configs
+mediapy             # video writing
+imageio-ffmpeg      # bundled ffmpeg binary for mediapy
+matplotlib
